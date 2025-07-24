@@ -5,16 +5,23 @@
 ## 📦 Features
 
 - Auto-loads modules tagged `"Initiative"`
-- Replicates modules tagged `"Replicate"` to `ReplicatedStorage` for client sided scripts
+- Replicates modules tagged `"Replicate"` to `ReplicatedStorage`
 - Supports `StarterPlayerScripts` & `StarterCharacterScripts` tagging
 - Exposes a `Load()` method for module requiring
+- Works regardless of the module’s location in the hierarchy
 
 ## 📁 Structure
 
-Modules tagged `"Initiative"` are automatically tracked. Example tags:
-- `Replicate` → copied to `ReplicatedStorage.Libraries`
-- `StarterPlayerScripts` → inserted into `StarterPlayer.StarterPlayerScripts`
-- `StarterCharacterScripts` → inserted into `StarterPlayer.StarterCharacterScripts`
+Modules tagged `"Initiative"` are automatically registered by the system.
+
+> 🧠 Think of it as an advanced `require()` system.  
+> By simply tagging a module with `"Initiative"`, it becomes globally accessible through `Initiative:Load("ModuleName")`, no matter where it's placed in the game.
+
+Recognized tags:
+- `Initiative` → registers the module for use with the system
+- `Replicate` → copies the module to `ReplicatedStorage.Libraries`
+- `StarterPlayerScripts` → inserts the module into `StarterPlayer.StarterPlayerScripts`
+- `StarterCharacterScripts` → inserts the module into `StarterPlayer.StarterCharacterScripts`
 
 ## 🚀 Usage
 
