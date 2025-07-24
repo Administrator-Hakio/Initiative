@@ -19,9 +19,9 @@ Modules tagged `"Initiative"` are automatically registered by the system.
 
 Recognized tags:
 - `Initiative` → registers the module for use with the system
-- `Replicate` → copies the module to `ReplicatedStorage.Libraries`
-- `StarterPlayerScripts` → inserts the module into `StarterPlayer.StarterPlayerScripts`
-- `StarterCharacterScripts` → inserts the module into `StarterPlayer.StarterCharacterScripts`
+- `Replicate` → copies the module to `ReplicatedStorage.Libraries` to be shared with client sided scripts
+- `StarterPlayerScripts` → inserts the module into `StarterPlayer.StarterPlayerScripts` to automatically load client scripts into StarterPlayerScripts
+- `StarterCharacterScripts` → inserts the module into `StarterPlayer.StarterCharacterScripts` to automatically load client scripts StarterCharacterScripts
 
 ## 🚀 Usage
 
