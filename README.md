@@ -21,7 +21,7 @@ Recognized tags:
 - `Initiative` → registers the module for use with the system
 - `Replicate` → copies the module to `ReplicatedStorage.Libraries` to be shared with client sided scripts
 - `StarterPlayerScripts` → inserts the LoadScript into `StarterPlayer.StarterPlayerScripts` to automatically load client scripts into StarterPlayerScripts
-- `StarterCharacterScripts` → inserts the LoadScript into `StarterPlayer.StarterCharacterScripts` to automatically load client scripts StarterCharacterScripts
+- `StarterCharacterScripts` → inserts the LoadScript into `StarterPlayer.StarterCharacterScripts` to automatically load client scripts into StarterCharacterScripts
 
 ## 🚀 Usage
 
