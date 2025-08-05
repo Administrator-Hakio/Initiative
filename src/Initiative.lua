@@ -87,16 +87,16 @@ end
 
 --/ Preloaders
 
+GetTagged("Initiative", function(Object)
+	if typeof(Object) ~= "Instance" or not Object:IsA("ModuleScript") then return end
+	Initiative.Libraries[Object.Name] = Object
+
+	if Object:HasTag("Replicate") then
+		Object.Parent = Initiative.Storage
+	end
+end)
+
 if not IsClient and not script:GetAttribute("Loaded") then
-	GetTagged("Initiative", function(Object)
-		if typeof(Object) ~= "Instance" or not Object:IsA("ModuleScript") then return end
-		Initiative.Libraries[Object.Name] = Object
-
-		if Object:HasTag("Replicate") then
-			Object.Parent = Initiative.Storage
-		end
-	end)
-
 	GetTagged("StarterCharacterScripts", function(Object)
 		Object:RemoveTag("StarterCharacterScripts")
 		Object.Parent = StarterPlayer.StarterCharacterScripts
