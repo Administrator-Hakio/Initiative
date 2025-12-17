@@ -1,21 +1,21 @@
-# ⚡ Initiative Main Frame
+# Initiative Main Frame
 
 > **Roblox script framework** that automatically collects tagged ModuleScripts and assigns them to the right services (`StarterPlayerScripts`, `StarterCharacterScripts`, etc.) with optional replication and client preloading.
 
 ---
 
-## ✨ Features
+## Features
 
-- 📌 **Auto-register** modules tagged with `"Initiative"`.
-- 🔄 **Replicate** modules tagged `"Replicate"` into `ReplicatedStorage.Libraries` for client access.
-- 🎯 **Targeted placement** into `StarterPlayerScripts` & `StarterCharacterScripts` with corresponding tags.
-- ⚡ **Preload client modules** tagged `"PreloadClient"` for instant availability on the client.
-- 🔍 Works **regardless of module location** in the DataModel.
-- 📚 Simple `Initiative:Load()` API for module requiring.
+- **Auto-register** modules tagged with `"Initiative"`.
+- **Replicate** modules tagged `"Replicate"` into `ReplicatedStorage.Libraries` for client access.
+- **Targeted placement** into `StarterPlayerScripts` & `StarterCharacterScripts` with corresponding tags.
+- **Preload client modules** tagged `"PreloadClient"` for instant availability on the client.
+- Works **regardless of module location** in the DataModel.
+- Simple `Initiative:Load()` API for module requiring.
 
 ---
 
-## 🗂 Recognized Tags
+## Recognized Tags
 
 | Tag | Description | Example Target |
 | --- | ----------- | -------------- |
@@ -27,7 +27,7 @@
 
 ---
 
-## 📁 How It Works
+## How It Works
 
 Modules with the tag `"Initiative"` are registered automatically.  
 Think of it as an **enhanced `require()` system**:  
